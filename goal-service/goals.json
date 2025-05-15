@@ -1,0 +1,182 @@
+[
+  {
+    "_id": 1,
+    "title": "Learn Python",
+    "description": "Master the basics",
+    "id": 1
+  },
+  {
+    "_id": 2,
+    "title": "Learn FastAPI",
+    "description": "Build microservice",
+    "id": 2
+  },
+  {
+    "_id": 3,
+    "title": "Explore Docker",
+    "description": "Containerize apps",
+    "id": 3
+  },
+  {
+    "_id": 4,
+    "title": "Study PostgreSQL",
+    "description": "Relational DB skills",
+    "id": 4
+  },
+  {
+    "_id": 5,
+    "title": "Learn Git",
+    "description": "Version control",
+    "id": 5
+  },
+  {
+    "_id": 6,
+    "title": "Practice Algorithms",
+    "description": "Prepare for interviews",
+    "id": 6
+  },
+  {
+    "_id": 7,
+    "title": "Master Data Structures",
+    "description": "Improve logic",
+    "id": 7
+  },
+  {
+    "_id": 8,
+    "title": "Learn Linux",
+    "description": "Command line basics",
+    "id": 8
+  },
+  {
+    "_id": 9,
+    "title": "Build REST API",
+    "description": "With FastAPI",
+    "id": 9
+  },
+  {
+    "_id": 10,
+    "title": "Read Software Design",
+    "description": "Solid principles",
+    "id": 10
+  },
+  {
+    "_id": 11,
+    "title": "Write Unit Tests",
+    "description": "Pytest & coverage",
+    "id": 11
+  },
+  {
+    "_id": 12,
+    "title": "Learn CI/CD",
+    "description": "Automate pipelines",
+    "id": 12
+  },
+  {
+    "_id": 13,
+    "title": "Use Postman",
+    "description": "Test APIs",
+    "id": 13
+  },
+  {
+    "_id": 14,
+    "title": "Study Networks",
+    "description": "OSI model basics",
+    "id": 14
+  },
+  {
+    "_id": 15,
+    "title": "Learn JavaScript",
+    "description": "Basics for frontend",
+    "id": 15
+  },
+  {
+    "_id": 16,
+    "title": "Build Portfolio",
+    "description": "Projects showcase",
+    "id": 16
+  },
+  {
+    "_id": 17,
+    "title": "Explore Kubernetes",
+    "description": "Deploy containers",
+    "id": 17
+  },
+  {
+    "_id": 18,
+    "title": "Practice SQL",
+    "description": "Queries and joins",
+    "id": 18
+  },
+  {
+    "_id": 19,
+    "title": "Write a Blog",
+    "description": "Share your knowledge",
+    "id": 19
+  },
+  {
+    "_id": 20,
+    "title": "Learn Bash",
+    "description": "Write shell scripts",
+    "id": 20
+  },
+  {
+    "_id": 21,
+    "title": "Study Design Patterns",
+    "description": "Reusable solutions",
+    "id": 21
+  },
+  {
+    "_id": 22,
+    "title": "Try Flask",
+    "description": "Another Python web framework",
+    "id": 22
+  },
+  {
+    "_id": 23,
+    "title": "Work on Open Source",
+    "description": "Contribute on GitHub",
+    "id": 23
+  },
+  {
+    "_id": 24,
+    "title": "Create Chatbot",
+    "description": "With Python and API",
+    "id": 24
+  },
+  {
+    "_id": 25,
+    "title": "Learn Async",
+    "description": "async/await basics",
+    "id": 25
+  },
+  {
+    "_id": 26,
+    "title": "Prepare Resume",
+    "description": "For developer jobs",
+    "id": 26
+  },
+  {
+    "_id": 27,
+    "title": "Master Regex",
+    "description": "Pattern matching",
+    "id": 27
+  },
+  {
+    "_id": 28,
+    "title": "Practice OOP",
+    "description": "Classes and objects",
+    "id": 28
+  },
+  {
+    "_id": 29,
+    "title": "Learn GraphQL",
+    "description": "Alternative to REST",
+    "id": 29
+  },
+  {
+    "_id": 30,
+    "title": "Study Computer Graphics",
+    "description": "Rendering and animation",
+    "id": 30
+  }
+]

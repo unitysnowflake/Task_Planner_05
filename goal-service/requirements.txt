@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pydantic
+passlib[argon2]
+python-jose==3.3.0
+python-multipart
+requests
+pymongo

@@ -1,0 +1,28 @@
+// Запуск с указанием использования кэша (для powershell)
+$env:USE_REDIS="true"; docker-compose up --build
+$env:USE_REDIS="false"; docker-compose up --build
+
+//Прогрев кэша
+docker exec -it task_planner-user-service-1 python cache_warm_up.py
+
+//Получение токена
+curl -X POST "http://127.0.0.1:8001/token" -d "username=admin&password=secret" -H "Content-Type: application/x-www-form-urlencoded"
+
+//Вход в sh
+docker exec -it task_planner-user-service-1 sh
+
+//Вставить токен из POST запроса
+export TOKEN="???"
+
+//Проверить токен
+echo $TOKEN
+
+//Запуск wrk
+ // 1 поток
+wrk -d 20 -t 1 -c 20 --latency -s get.lua http://localhost:8001
+
+ // 5 потоков
+wrk -d 20 -t 5 -c 20 --latency -s get.lua http://localhost:8001
+
+ // 10 потоков
+wrk -d 20 -t 10 -c 20 --latency -s get.lua http://localhost:8001

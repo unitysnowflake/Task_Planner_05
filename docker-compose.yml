@@ -1,0 +1,97 @@
+version: '3.8'
+
+services:
+  user-service:
+    build: ./user-service
+    ports:
+      - "8001:8001"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - DATABASE_URL=postgresql+psycopg2://postgres:postgres@postgres:5432/lr_3_test_1
+      - USE_REDIS=${USE_REDIS}
+      - REDIS_URL=redis://redis:6379/0
+    volumes:
+      - ./user-service:/app
+    depends_on:
+      - postgres
+      - redis
+    command: bash -c "while ! pg_isready -h postgres -U postgres; do sleep 1; done; uvicorn user_service:app --host 0.0.0.0 --port 8001 --log-level warning"
+
+  goal-service:
+    build: ./goal-service
+    ports:
+      - "8002:8002"
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./goal-service:/app
+    depends_on:
+      - user-service
+      - mongodb
+    command: uvicorn goal_service:app --host 0.0.0.0 --port 8002
+
+  postgres:
+    image: postgres:14
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=lr_3_test_1
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  db_create:
+    build: ./user-service
+    depends_on:
+      postgres:
+        condition: service_healthy
+    command: python db_create.py
+    volumes:
+      - ./user-service:/app
+    environment:
+      - DATABASE_URL=postgresql+psycopg2://postgres:postgres@postgres:5432/postgres
+    entrypoint: bash -c "while ! pg_isready -h postgres -U postgres; do sleep 1; done; python db_create.py"
+
+  mongodb:
+    image: mongo:5.0
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+
+  mongodb_create:
+    build: ./goal-service
+    command: python /app/mongodb_create.py
+    depends_on:
+      - mongodb
+
+  cache_warm_up:
+    build: ./user-service
+    command: python cache_warm_up.py
+    depends_on:
+      - postgres
+      - redis
+    environment:
+      - DATABASE_URL=postgresql+psycopg2://postgres:postgres@postgres:5432/lr_3_test_1
+      - REDIS_URL=redis://redis:6379/0
+    volumes:
+      - ./user-service:/app
+    entrypoint: bash -c "while ! pg_isready -h postgres -U postgres; do sleep 10; done; python cache_warm_up.py"
+
+  redis:
+    image: redis:6.2
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+volumes:
+  postgres_data:
+  mongodb_data:
+  redis_data:

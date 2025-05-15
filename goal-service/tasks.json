@@ -1,0 +1,272 @@
+[
+  {
+    "_id": 1,
+    "title": "Install Python",
+    "description": "Set up environment",
+    "status": "todo",
+    "assignee": "robert.glover83",
+    "id": 1,
+    "goal_id": 1
+  },
+  {
+    "_id": 2,
+    "title": "Watch FastAPI tutorial",
+    "description": "Official docs video",
+    "status": "todo",
+    "assignee": "alexandria.nguyen62",
+    "id": 2,
+    "goal_id": 2
+  },
+  {
+    "_id": 3,
+    "title": "Install Docker",
+    "description": "On local machine",
+    "status": "in_progress",
+    "assignee": "brandi.dyer16",
+    "id": 3,
+    "goal_id": 3
+  },
+  {
+    "_id": 4,
+    "title": "Create DB schema",
+    "description": "For PostgreSQL",
+    "status": "done",
+    "assignee": "linda.charles18",
+    "id": 4,
+    "goal_id": 4
+  },
+  {
+    "_id": 5,
+    "title": "Set up Git repo",
+    "description": "Initialize project",
+    "status": "todo",
+    "assignee": "carrie.mann12",
+    "id": 5,
+    "goal_id": 5
+  },
+  {
+    "_id": 6,
+    "title": "Solve 10 LeetCode problems",
+    "description": "Easy level",
+    "status": "todo",
+    "assignee": "brandy.walker58",
+    "id": 6,
+    "goal_id": 6
+  },
+  {
+    "_id": 7,
+    "title": "Implement LinkedList",
+    "description": "In Python",
+    "status": "todo",
+    "assignee": "nicholas.johnson51",
+    "id": 7,
+    "goal_id": 7
+  },
+  {
+    "_id": 8,
+    "title": "Learn 10 bash commands",
+    "description": "Linux basics",
+    "status": "done",
+    "assignee": "adam.thomas13",
+    "id": 8,
+    "goal_id": 8
+  },
+  {
+    "_id": 9,
+    "title": "Build a FastAPI endpoint",
+    "description": "GET route",
+    "status": "in_progress",
+    "assignee": "stephanie.olson80",
+    "id": 9,
+    "goal_id": 9
+  },
+  {
+    "_id": 10,
+    "title": "Read Clean Code",
+    "description": "First 3 chapters",
+    "status": "todo",
+    "assignee": "jeffrey.morrison96",
+    "id": 10,
+    "goal_id": 10
+  },
+  {
+    "_id": 11,
+    "title": "Write unit tests",
+    "description": "For existing code",
+    "status": "in_progress",
+    "assignee": "tanya.hudson18",
+    "id": 11,
+    "goal_id": 11
+  },
+  {
+    "_id": 12,
+    "title": "Create GitHub Action",
+    "description": "CI/CD demo",
+    "status": "todo",
+    "assignee": "joshua.mendoza8",
+    "id": 12,
+    "goal_id": 12
+  },
+  {
+    "_id": 13,
+    "title": "Send API request",
+    "description": "Using Postman",
+    "status": "done",
+    "assignee": "bobby.porter48",
+    "id": 13,
+    "goal_id": 13
+  },
+  {
+    "_id": 14,
+    "title": "Draw OSI diagram",
+    "description": "Understand layers",
+    "status": "todo",
+    "assignee": "shelley.dyer16",
+    "id": 14,
+    "goal_id": 14
+  },
+  {
+    "_id": 15,
+    "title": "Write JS functions",
+    "description": "Basic logic",
+    "status": "todo",
+    "assignee": "madison.reed70",
+    "id": 15,
+    "goal_id": 15
+  },
+  {
+    "_id": 16,
+    "title": "Add project to portfolio",
+    "description": "Upload to site",
+    "status": "in_progress",
+    "assignee": "natalie.rogers23",
+    "id": 16,
+    "goal_id": 16
+  },
+  {
+    "_id": 17,
+    "title": "Deploy to Kubernetes",
+    "description": "Use Minikube",
+    "status": "todo",
+    "assignee": "carl.thompson8",
+    "id": 17,
+    "goal_id": 17
+  },
+  {
+    "_id": 18,
+    "title": "Write SQL join",
+    "description": "Inner & left",
+    "status": "done",
+    "assignee": "jay.gaines84",
+    "id": 18,
+    "goal_id": 18
+  },
+  {
+    "_id": 19,
+    "title": "Draft blog post",
+    "description": "Topic: learning FastAPI",
+    "status": "todo",
+    "assignee": "kimberly.bennett52",
+    "id": 19,
+    "goal_id": 19
+  },
+  {
+    "_id": 20,
+    "title": "Write shell script",
+    "description": "Automate task",
+    "status": "todo",
+    "assignee": "vincent.wilkins88",
+    "id": 20,
+    "goal_id": 20
+  },
+  {
+    "_id": 21,
+    "title": "Study Singleton pattern",
+    "description": "Use cases",
+    "status": "todo",
+    "assignee": "justin.little2",
+    "id": 21,
+    "goal_id": 21
+  },
+  {
+    "_id": 22,
+    "title": "Create Flask app",
+    "description": "Hello world route",
+    "status": "todo",
+    "assignee": "miguel.sullivan18",
+    "id": 22,
+    "goal_id": 22
+  },
+  {
+    "_id": 23,
+    "title": "Fix open issue",
+    "description": "From GitHub project",
+    "status": "in_progress",
+    "assignee": "mitchell.jefferson30",
+    "id": 23,
+    "goal_id": 23
+  },
+  {
+    "_id": 24,
+    "title": "Integrate Projects",
+    "description": "Into chatbot",
+    "status": "todo",
+    "assignee": "antonio.nixon46",
+    "id": 24,
+    "goal_id": 24
+  },
+  {
+    "_id": 25,
+    "title": "Try async FastAPI",
+    "description": "With async def",
+    "status": "todo",
+    "assignee": "barry.todd32",
+    "id": 25,
+    "goal_id": 25
+  },
+  {
+    "_id": 26,
+    "title": "Write resume draft",
+    "description": "PDF format",
+    "status": "done",
+    "assignee": "michael.flores30",
+    "id": 26,
+    "goal_id": 26
+  },
+  {
+    "_id": 27,
+    "title": "Use regex in Python",
+    "description": "Email validator",
+    "status": "todo",
+    "assignee": "pamela.tyler80",
+    "id": 27,
+    "goal_id": 27
+  },
+  {
+    "_id": 28,
+    "title": "Write OOP example",
+    "description": "Class and method",
+    "status": "done",
+    "assignee": "valerie.cameron13",
+    "id": 28,
+    "goal_id": 28
+  },
+  {
+    "_id": 29,
+    "title": "Query GraphQL API",
+    "description": "Get user data",
+    "status": "todo",
+    "assignee": "whitney.ellis77",
+    "id": 29,
+    "goal_id": 29
+  },
+  {
+    "_id": 30,
+    "title": "Animate 3D model",
+    "description": "Using keyframes",
+    "status": "in_progress",
+    "assignee": "joseph.mayo91",
+    "id": 30,
+    "goal_id": 30
+  }
+]
