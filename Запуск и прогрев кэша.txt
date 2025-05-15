@@ -5,7 +5,7 @@ $env:USE_REDIS="false"; docker-compose up --build
 //Получение токена
 curl -X POST "http://127.0.0.1:8001/token" -d "username=admin&password=secret" -H "Content-Type: application/x-www-form-urlencoded"
 
-//Вход в sh
+//Вход в shell
 docker exec -it task_planner-user-service-1 sh
 
 //Вставить токен из POST запроса
